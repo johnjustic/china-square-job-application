@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>China Square Mall Job Application</title>
+</head>
+<body>
+    <header>
+        <h1>Welcome to China Square Mall</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#jobs">Jobs</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="about">
+        <h2>About Us</h2>
+        <!-- Add content about China Square Mall here -->
+    </section>
+
+    <section id="jobs">
+        <h2>Job Openings</h2>
+        <!-- List of job openings with descriptions and apply buttons -->
+    </section>
+
+    <section id="application">
+        <h2>Apply for a Job</h2>
+        <form action="submit_application.php" method="post" enctype="multipart/form-data">
+            <!-- Application form fields go here (refer to your previous content) -->
+            <label for="name">Full Name</label>
+            <input type="text" id="name" name="name" required>
+            <label for="user-email">Your Email:</label>
+    <input type="email" id="user-email" name="user-email" required>
+
+
+            <!-- Add more form fields here -->
+            <h2>Credential Requirements</h2>
+    <form id="application-form" action="submit_application.php" method="post" enctype="multipart/form-data">
+        <ul>
+            <li>
+                <strong>Resume/CV:</strong> Please attach your up-to-date resume or CV.
+                <input type="file" name="resume" accept=".pdf, .doc, .docx" required>
+            </li>
+            <li>
+                <strong>Educational Background:</strong> Provide details of your highest educational qualifications, including degrees, schools, and graduation years.
+                <textarea name="education" rows="4" cols="50" required></textarea>
+            </li>
+            <li>
+                <strong>Work Experience:</strong> List your relevant work experience, including job titles, companies, and employment dates.
+                <textarea name="work_experience" rows="4" cols="50" required></textarea>
+            </li>
+            <li>
+                <strong>Achievements and Awards:</strong> Highlight any relevant achievements, awards, or recognitions that demonstrate your qualifications for the position.
+                <textarea name="achievements" rows="4" cols="50" required></textarea>
+            </li>
+            <li>
+                <strong>Cover Letter (Optional):</strong> You may include a cover letter explaining why you are interested in this position and why you are the ideal candidate.
+                <textarea name="cover_letter" rows="4" cols="50"></textarea>
+            </li>
+            <li>
+                <strong>Additional Documents:</strong> If applicable, you can also upload any relevant certificates or documents to support your application.
+                <input type="file" name="additional_documents" accept=".pdf, .doc, .docx">
+            </li>
+        </ul>
+
+            <button type="submit">Submit Application</button>
+        </form>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <!-- Contact information and a contact form go here -->
+    </section>
+    <script src="index.js"></script>
+</body>
+</html>
