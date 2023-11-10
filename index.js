@@ -1,43 +1,16 @@
-document.addEventListener("DOMContentLoaded", function () {
-    const submitButton = document.getElementById("submit-button");
+function sendMessage() {
+    // Validate the form fields (you can add more validation as needed)
+    var name = document.getElementById('name').value;
+    var email = document.getElementById('email').value;
+    var message = document.getElementById('message').value;
 
-    submitButton.addEventListener("click", function (event) {
-        event.preventDefault();
-
-        const userEmailAddress = document.getElementById("user-email").value;
-
-        // Validate the user's email address
-        if (!isValidEmail(userEmailAddress)) {
-            alert("Please enter a valid email address.");
-            return;
-        }
-
-        // Collect form data
-        const formData = new FormData(document.getElementById("application-form"));
-        formData.append("user-email", userEmailAddress);
-
-        // Send data to the server-side script
-        fetch("submit_application.php", {
-            method: "POST",
-            body: formData,
-        })
-            .then(response => response.json())
-            .then(data => {
-                if (data.success) {
-                    alert("Application submitted successfully. Thank you!");
-                } else {
-                    alert("Application submission failed. Please try again later.");
-                }
-            })
-            .catch(error => {
-                console.error("Error: " + error);
-                alert("An error occurred. Please try again later.");
-            });
-    });
-
-    function isValidEmail(email) {
-        // A basic email validation function
-        const emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
-        return emailPattern.test(email);
+    if (name.trim() === '' || email.trim() === '' || message.trim() === '') {
+        alert('Please fill in all required fields.');
+        return;
     }
-});
+
+    // Assuming form validation passes, show the confirmation message
+    document.getElementById('confirmation-message').style.display = 'block';
+
+    // You can also submit the form data to the server using AJAX if needed
+}

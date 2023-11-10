@@ -90,7 +90,8 @@
                     <label for="message">Your Message:</label>
                     <textarea id="message" name="message" rows="4" required></textarea>
 
-                    <button type="submit">Send Message</button>
+                    <button type="button" onclick="sendMessage()">Send Message</button>
+                    <div id="confirmation-message" style="display: none;">Message sent!</div>
                 </form>
 
                 <div class="contact-info">
