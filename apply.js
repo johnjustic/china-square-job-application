@@ -36,7 +36,7 @@ document.addEventListener("DOMContentLoaded", function () {
     setInterval(typeCaption, 3000); // Change caption every 3 seconds
 });
 // JavaScript to create a typewriter-like effect on the paragraph element
-const text = "Welcome to our team! We're excited to have you join us. Apply now and be part of our success story.";
+const text = " Apply now and be part of our success story.";
 let charIndex = 0;
 const typing = () => {
     const typingText = document.getElementById('typing-effect');
