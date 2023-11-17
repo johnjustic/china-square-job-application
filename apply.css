@@ -125,6 +125,7 @@ button:hover {
 /* ... (previous CSS code) ... */
 
 #header-caption {
+    color: #f6a80c;
     font-size: 2em;
     font-weight: bold;
     white-space: nowrap;
@@ -157,13 +158,13 @@ button:hover {
 
 .glowing-spiral h1 {
     font-size: 3em;
-    color: #333;
+    color: rgb(88, 160, 5);
     margin-bottom: 20px;
 }
 
 .glowing-spiral p {
     font-size: 1.2em;
-    color: #555;
+    color: orange;
     margin-bottom: 30px;
 }
 
