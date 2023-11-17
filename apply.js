@@ -20,7 +20,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     const captions = [
         
-        "Welcome to China Square",
+        "Apply Now",
         "Innovation Redefined",
         "Building a Better Future",
         // Add more captions as needed
